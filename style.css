@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1200px;
+  min-height: 100vh;
+  color: #f4f1ec;
+  background-color: #070d14;
+  background-image:
+    linear-gradient(90deg, #070d14f2 0%, #070d14b3 36%, #070d141a 78%),
+    linear-gradient(0deg, #070d14 0%, #070d1400 75%),
+    url("images/iss-earth.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-header, main, footer {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  color: #c4cdd5;
+  font-size: 14px;
+}
+
+.site-header p, .reading-heading p, .reading-notes p, footer p {
+  margin: 0;
+}
+
+.site-name {
+  letter-spacing: 0.22em;
+  color: #f4f1ec;
+}
+
+.intro {
+  padding: 42px 0 55px;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: #b6c9d8;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 104px;
+  font-weight: normal;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+h1 em {
+  color: #c6d6e4;
+  font-weight: normal;
+}
+
+.description {
+  margin: 25px 0;
+  color: #c4cdd5;
+  font-size: 18px;
+}
+
+button {
+  padding: 13px 24px;
+  border: 1px solid #dce8f0;
+  border-radius: 2px;
+  background: #dce8f0;
+  color: #101b25;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 5px;
+}
+
+.refresh-note, .reading-notes, footer {
+  font-size: 14px;
+  color: #aab6c2;
+}
+
+.refresh-note {
+  margin: 12px 0 0;
+}
+
+.readings {
+  padding: 25px 0;
+  border-top: 1px solid #ffffff40;
+  border-bottom: 1px solid #ffffff26;
+}
+
+.reading-heading, .reading-notes, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+#hemisphere {
+  font-size: 16px;
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin: 24px 0;
+}
+
+dt {
+  margin-bottom: 6px;
+  color: #aab6c2;
+  font-size: 14px;
+}
+
+dd {
+  margin: 0;
+  font-size: 40px;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  margin-left: 8px;
+  color: #aab6c2;
+  font-size: 17px;
+}
+
+.north .coordinate, .north #hemisphere {
+  color: #a4d1f4;
+}
+
+.south .coordinate, .south #hemisphere {
+  color: #efbf8e;
+}
+
+.equator .coordinate, .equator #hemisphere {
+  color: #a8dfca;
+}
+
+footer {
+  padding: 22px 0 28px;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}

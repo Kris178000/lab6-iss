@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Where is the ISS?</title>
+  <meta name="description" content="A live snapshot of the International Space Station's position above Earth.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name">ORBIT OBSERVER</p>
+    <p>International Space Station</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">A DIFFERENT VIEW OF HOME</p>
+      <h1>Where is<br><em>the ISS?</em></h1>
+      <p class="description">Somewhere above us, a station is circling Earth.<br>Take a look at its latest position.</p>
+      <button id="refresh-button" type="button">Refresh position</button>
+      <p class="refresh-note">A new snapshot with every refresh.</p>
+    </section>
+
+    <section class="readings" aria-label="Latest space station position" aria-live="polite">
+      <div class="reading-heading">
+        <h2>Above the Earth</h2>
+        <p id="hemisphere">Waiting for position</p>
+      </div>
+      <dl class="data-row">
+        <div>
+          <dt>Latitude</dt>
+          <dd><span id="latitude" class="coordinate">--</span><span class="unit">°</span></dd>
+        </div>
+        <div>
+          <dt>Longitude</dt>
+          <dd><span id="longitude" class="coordinate">--</span><span class="unit">°</span></dd>
+        </div>
+        <div>
+          <dt>Speed</dt>
+          <dd><span id="speed">--</span><span class="unit">km/h</span></dd>
+        </div>
+        <div>
+          <dt>Altitude</dt>
+          <dd><span id="altitude">--</span><span class="unit">km</span></dd>
+        </div>
+      </dl>
+      <div class="reading-notes">
+        <p id="update-time">API time: --</p>
+        <p>Position colours: blue for north, amber for south, mint at the equator.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data from <a href="https://wheretheiss.at/w/developer" target="_blank" rel="noopener">Where the ISS at?</a></p>
+    <p>Photo: <a href="https://www.nasa.gov/image-article/international-space-station-46/" target="_blank" rel="noopener">NASA / STS-130 crew</a>. The background is a photograph, not a live camera.</p>
+  </footer>
+</body>
+</html>
